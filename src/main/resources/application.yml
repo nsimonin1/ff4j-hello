@@ -1,0 +1,15 @@
+server:
+  port: ${PORT:5000}
+spring:  jpa:    database: postgresql
+    show-sql: true
+    generate-ddl: true
+    hibernate:      ddl-auto: create-drop
+    properties:      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  datasource:    platform: postgres
+    username: ffdb
+    password: ffdb
+    url: jdbc:postgresql://localhost:5432/ffbdd
+  
